@@ -1,4 +1,127 @@
-h2 {
-  color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-inline {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 18px;
+  padding-bottom: 4px;
+  transition: color 0.4s, border 0.4s;
+}
+
+a:hover {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+span {
+  display: block;
+}
+
+.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+header {
+  height: 100px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  background: white;
+  z-index: 1;
+  border-bottom: 1px solid grey;
+}
+
+header .top-header {
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+header .top-header img {
+  max-width: 100px;
+}
+
+header .top-header span {
+  font-size: 25px;
+  color: grey;
+  margin-bottom: 2px;
+}
+
+header .bottom-header {
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+main .faq-container {
+  margin: 50px auto;
+  width: 80%;
+}
+
+main .faq-container p {
+  margin-bottom: 50px;
+  line-height: 2;
+}
+
+main .faq-container h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #3c4043;
+}
+
+main .faq-container h2:first-child {
+  margin-top: 100px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+footer .footer-item {
+  width: 80%;
+}
+
+footer .footer-item .menu-inline a {
+  font-size: 13px;
 }
 
